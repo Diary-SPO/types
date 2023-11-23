@@ -11,6 +11,9 @@
   "keywords": [
     "types"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "author": "zamelane",
   "license": "MIT",
   "bugs": {
