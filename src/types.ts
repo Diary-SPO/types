@@ -6,7 +6,6 @@ import { Person } from '@diary-spo/shared/src/base'
  */
 export interface DiaryUser
   extends Pick<Person, 'id' | 'firstName' | 'lastName' | 'middleName'> {
-  id: number
   spoId?: number
   groupId: number
   login: string
@@ -14,7 +13,7 @@ export interface DiaryUser
   phone: string
   birthday: string
   cookie: string
-  token?: string
+  token: string
 }
 
 /**
