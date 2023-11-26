@@ -159,3 +159,21 @@ export interface ResponseLogin extends Person {
   birthday: string
   token: string
 }
+
+/**
+ * Структура таблицы auth, хранящей токены
+ */
+export interface TokenDetailedInfo {
+  id?: number
+  idDiaryUser: number
+  token: string
+  lastDate: string
+  lastUsedDate: string
+}
+
+/**
+ * Структура для извлечения куки
+ */
+export interface CookieGetDetailedInfo extends TokenDetailedInfo {
+  cookie: string
+}
