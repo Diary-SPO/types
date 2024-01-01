@@ -1,4 +1,4 @@
-import { Organization, Tenants, type Teacher } from '@diary-spo/shared'
+import { Organization, type Teacher } from '@diary-spo/shared'
 import { Person } from '@diary-spo/shared/src/base'
 
 /**
@@ -45,17 +45,17 @@ export interface SPO
   id?: number
 }
 
-/**
- * ???
- */
-export interface PersonResponse
-  extends Pick<Tenants, 'firstName' | 'isTrusted' | 'lastName' | 'middleName'> {
+export interface PersonResponse {
   person: {
     birthday: string
     id: number
     isEsiaBound: boolean
     login: string
     phone: string
+    firstName: string
+    isTrusted: boolean
+    lastName: string
+    middleName: string
   }
 }
 
@@ -158,22 +158,4 @@ export interface ResponseLogin extends Person {
   phone: string
   birthday: string
   token: string
-}
-
-/**
- * Структура таблицы auth, хранящей токены
- */
-export interface TokenDetailedInfo {
-  id?: number
-  idDiaryUser: number
-  token: string
-  lastDate: string
-  lastUsedDate: string
-}
-
-/**
- * Структура для извлечения куки
- */
-export interface CookieGetDetailedInfo extends TokenDetailedInfo {
-  cookie: string
 }
