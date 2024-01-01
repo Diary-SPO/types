@@ -14,7 +14,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "author": "zamelane",
+  "author": "scffs",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Diary-SPO/types/issues"
