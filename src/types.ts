@@ -159,3 +159,29 @@ export interface ResponseLogin extends Person {
   birthday: string
   token: string
 }
+
+/**
+ * Новый интерфейс для работы с кукой.
+ */
+export interface DatabaseDiaryUser extends DiaryUser {
+  cookieLastDateUpdate: string
+}
+
+/**
+ * Тип для получения данных о входе из базы.
+ */
+export interface DatabaseResponseLogin extends ResponseLogin {
+  groupName: string
+}
+
+/**
+ * Информация о куках из базы.
+ * Не является структурой таблицы.
+ */
+export interface CookieInfoFromDatabase {
+  id: number
+  idDiaryUser: number
+  token: string
+  lastUsedDate: string
+  cookie: string
+}
