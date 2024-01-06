@@ -141,7 +141,7 @@ export interface Auth {
   id: number
   idDiaryUser: number
   token: string
-  lastDate: string
+  lastUsedDate: string
 }
 
 /**
