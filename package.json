@@ -1,6 +1,6 @@
 {
   "name": "@diary-spo/types",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "types to diary spo server responses",
   "main": "src/types.ts",
   "types": "src/types.ts",
