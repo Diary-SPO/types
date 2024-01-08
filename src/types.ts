@@ -14,6 +14,7 @@ export interface DiaryUser
   birthday: string
   cookie: string
   token: string
+  cookieLastDateUpdate: string
 }
 
 /**
@@ -157,5 +158,18 @@ export interface ResponseLogin extends Person {
   login: string
   phone: string
   birthday: string
+  groupName: string
   token: string
+}
+
+/**
+ * Информация о куках из базы.
+ * Не является структурой таблицы.
+ */
+export interface CookieInfoFromDatabase {
+  id: number
+  idDiaryUser: number
+  token: string
+  lastUsedDate: string
+  cookie: string
 }
